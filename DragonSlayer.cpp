@@ -1,11 +1,13 @@
 #include "DragonSlayer.h"
 #include "Dragon.h"
+#include "Utility.h"
 
 DragonSlayer::DragonSlayer(std::string name_, int hitPoints_, int armor_)
              : Character(hitPoints_, armor_, 4),
                name(name_)
 {
-
+    makeHelpfulItems(2);
+    makeDefensiveItems(1);
 }
 
 //DragonSlayer::getName
